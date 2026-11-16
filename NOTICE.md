@@ -32,6 +32,9 @@ MIT-licensed code may be combined into a GPL-licensed work, provided the MIT not
 
 ## Changes (as required by GPLv3 section 5a)
 
+### 2026-11-16: v2.1.0, noit2.com
+- Added the output style "Simplified English" (`output-styles/simplified-english.md`), a writing protocol based on the principles of ASD-STE100.
+
 ### 2026-11-16: v2.0.0, noit2.com
 Relative to godot-claude-skills v1.0.0:
 - Relicensed the combined work as GPL-3.0-or-later and renamed the plugin to `noit-godot-skills`.

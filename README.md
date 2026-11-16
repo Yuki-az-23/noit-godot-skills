@@ -53,6 +53,19 @@ After Claude writes or edits a `.gd` file, the plugin parses it with your local 
 - Set `GODOT_CLAUDE_SKIP_CHECK=1` to turn the hook off.
 - Files under `addons/` are skipped.
 
+### Output style: Simplified English
+
+The plugin includes the output style **Simplified English** (`output-styles/simplified-english.md`). It makes Claude write all prose in clear, consistent English, based on the principles of ASD-STE100 Simplified Technical English:
+- one word for one meaning, with a glossary of approved terms
+- the active voice and simple tenses
+- a maximum of 20 words in an instruction and 25 words in a description
+- the conclusion first, then the reasons
+- an owner and a due date for each action
+
+The rules apply to prose only. Code, commands and file names stay exactly as they are.
+
+To use it, select **Simplified English** with `/output-style`. To add your company terms, edit the glossary table in section 8 of the file.
+
 ### MCP server
 
 **This plugin does not include the godot-mcp server.** It ships only a launcher (`scripts/start-godot-mcp.sh`) that starts your own install of the separate [alexmeckes/godot-mcp](https://github.com/alexmeckes/godot-mcp) project (99 tools: scenes, scripts, shaders, animation, input, audio, navigation, UI, procedural generation, live editor control and runtime automation) for the Godot project in your working folder. Until you install it, the server shows as failed and the skills work from files only. Install it once, then restart Claude:
@@ -93,6 +106,7 @@ Local development: `claude --plugin-dir ./noit-godot-skills`. In the Claude app,
 noit-godot-skills/
 ├── .claude-plugin/        plugin.json, marketplace.json
 ├── .mcp.json              starts godot-mcp via scripts/start-godot-mcp.sh
+├── output-styles/         simplified-english.md (writing protocol)
 ├── assets/                icon.svg (mascot source; PNG in .claude-plugin/)
 ├── agents/                godot-reviewer.md
 ├── hooks/                 hooks.json, check-gdscript.mjs

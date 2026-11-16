@@ -8,8 +8,8 @@
     {
       "name": "noit-godot-skills",
       "source": "./",
-      "description": "Godot 4.x (4.0–4.7) skill pack for Claude: GDScript, scenes, shaders, physics, UI, animation, input, audio, navigation, multiplayer, C#, testing, export/CI, performance and version migration, with a launcher for the separately installed godot-mcp server, a GDScript parse-check hook and a code-review agent.",
-      "version": "2.0.0",
+      "description": "Godot 4.x (4.0–4.7) skill pack for Claude: GDScript, scenes, shaders, physics, UI, animation, input, audio, navigation, multiplayer, C#, testing, export/CI, performance and version migration, with a launcher for the separately installed godot-mcp server, a GDScript parse-check hook a code-review agent and a Simplified English writing style.",
+      "version": "2.1.0",
       "author": {
         "name": "noit2.com"
       },
