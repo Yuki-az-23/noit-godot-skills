@@ -1,3 +1,5 @@
+<p align="center"><img src=".claude-plugin/icon.png" alt="noit-godot-skills mascot: a caped, masked, mustached cyborg slug" width="200"></p>
+
 # noit-godot-skills
 
 A Claude plugin for Godot 4.x game development (4.0–4.7). It gives Claude working knowledge of every major Godot system, current to **Godot 4.7.2**, and connects it to the [godot-mcp](https://github.com/alexmeckes/godot-mcp) tool server for reading, editing, running and testing projects.
@@ -91,6 +93,7 @@ Local development: `claude --plugin-dir ./noit-godot-skills`. In the Claude app,
 noit-godot-skills/
 ├── .claude-plugin/        plugin.json, marketplace.json
 ├── .mcp.json              starts godot-mcp via scripts/start-godot-mcp.sh
+├── assets/                icon.svg (mascot source; PNG in .claude-plugin/)
 ├── agents/                godot-reviewer.md
 ├── hooks/                 hooks.json, check-gdscript.mjs
 ├── scripts/               start-godot-mcp.sh, api_diff.py

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="bg" cx="60%" cy="35%" r="80%">
+      <stop offset="0" stop-color="#3b2a6e"/>
+      <stop offset="0.55" stop-color="#1c1a3d"/>
+      <stop offset="1" stop-color="#0d0d1f"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9df27a"/>
+      <stop offset="0.6" stop-color="#4fc25a"/>
+      <stop offset="1" stop-color="#2a8a45"/>
+    </linearGradient>
+    <linearGradient id="cape" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff4d5e"/>
+      <stop offset="1" stop-color="#a3122a"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9eef5"/>
+      <stop offset="0.45" stop-color="#9aa6b8"/>
+      <stop offset="1" stop-color="#5a6578"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#7ff6ff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#7ff6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="redlens" cx="40%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#ffd0d0"/>
+      <stop offset="0.35" stop-color="#ff3b3b"/>
+      <stop offset="1" stop-color="#7a0000"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe27a"/>
+      <stop offset="1" stop-color="#e09a12"/>
+    </linearGradient>
+    <clipPath id="bodyClip">
+      <path id="bodyShape" d="M150,800 C260,760 380,705 520,685 C600,560 600,365 720,335 C860,300 905,450 885,560 C872,655 865,765 822,800 Q480,842 150,800 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect width="1024" height="1024" rx="200" fill="url(#bg)"/>
+  <g fill="#fff6c2">
+    <path d="M190,190 l10,26 26,10 -26,10 -10,26 -10,-26 -26,-10 26,-10z"/>
+    <path d="M950,330 l7,18 18,7 -18,7 -7,18 -7,-18 -18,-7 18,-7z" opacity="0.8"/>
+    <path d="M300,320 l5,13 13,5 -13,5 -5,13 -5,-13 -13,-5 13,-5z" opacity="0.6"/>
+    <path d="M940,700 l6,15 15,6 -15,6 -6,15 -6,-15 -15,-6 15,-6z" opacity="0.7"/>
+  </g>
+
+  <!-- glowing slime trail -->
+  <path d="M70,858 C300,880 600,885 900,852" stroke="#7ff6ff" stroke-width="22" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <path d="M70,858 C300,880 600,885 900,852" stroke="#c9fdff" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- cape (behind body) -->
+  <path d="M690,520 C540,400 340,360 150,455 L215,515 L140,575 L235,605 L170,680 C360,665 540,650 720,612 Z" fill="url(#cape)"/>
+  <path d="M690,520 C540,430 360,410 205,470" stroke="#ff8a96" stroke-width="8" fill="none" opacity="0.6" stroke-linecap="round"/>
+
+  <!-- antennae -->
+  <path d="M705,350 C690,300 670,260 655,215" stroke="#4fc25a" stroke-width="22" fill="none" stroke-linecap="round"/>
+  <path d="M800,340 C820,295 840,255 862,210" stroke="#9aa6b8" stroke-width="22" fill="none" stroke-linecap="round"/>
+  <path d="M808,322 l14,-28 M826,284 l14,-28" stroke="#5a6578" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="652" cy="205" r="30" fill="#9df27a" stroke="#2a8a45" stroke-width="6"/>
+  <circle cx="866" cy="200" r="70" fill="url(#glow)"/>
+  <circle cx="866" cy="200" r="28" fill="url(#metal)" stroke="#3d4656" stroke-width="5"/>
+  <circle cx="866" cy="200" r="11" fill="#7ff6ff"/>
+
+  <!-- body -->
+  <use href="#bodyShape" fill="url(#body)" stroke="#1f6b36" stroke-width="10"/>
+
+  <!-- cyborg plating on the back half (clipped to body) -->
+  <g clip-path="url(#bodyClip)">
+    <path d="M250,600 L515,600 Q565,740 535,900 L250,900 Z" fill="url(#metal)"/>
+    <path d="M515,600 Q565,740 535,900" stroke="#3d4656" stroke-width="9" fill="none"/>
+    <path d="M527,600 Q577,740 547,900" stroke="#7ff6ff" stroke-width="4" fill="none" opacity="0.7"/>
+    <path d="M345,640 L345,900 M450,600 L450,900" stroke="#3d4656" stroke-width="7"/>
+    <path d="M250,775 C330,760 420,745 540,736" stroke="#7ff6ff" stroke-width="9" fill="none"/>
+    <path d="M250,775 C330,760 420,745 540,736" stroke="#7ff6ff" stroke-width="26" fill="none" opacity="0.3"/>
+    <g fill="#3d4656">
+      <circle cx="300" cy="760" r="7"/><circle cx="395" cy="725" r="7"/><circle cx="500" cy="705" r="7"/>
+      <circle cx="395" cy="800" r="7"/><circle cx="500" cy="790" r="7"/>
+    </g>
+    <!-- belly foot -->
+    <path d="M150,800 Q480,842 822,800 L822,840 L150,840 Z" fill="#2a8a45"/>
+  </g>
+  <use href="#bodyShape" fill="none" stroke="#1f6b36" stroke-width="10"/>
+  <!-- glossy highlight -->
+  <path d="M715,370 C780,355 840,395 855,450" stroke="#ffffff" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- cape clasp -->
+  <circle cx="582" cy="612" r="24" fill="url(#gold)" stroke="#8a5a00" stroke-width="5"/>
+
+  <!-- power emblem -->
+  <circle cx="735" cy="700" r="60" fill="url(#gold)" stroke="#8a5a00" stroke-width="7"/>
+  <path d="M748,650 L708,708 L734,708 L720,752 L765,690 L739,690 Z" fill="#a3122a"/>
+
+  <!-- hero mask -->
+  <path d="M640,430 C680,395 740,405 765,425 C790,405 850,395 892,428 C885,470 845,488 812,478 C792,472 778,460 765,455 C752,460 738,472 718,478 C685,488 648,470 640,430 Z" fill="#2b1d5c" stroke="#120b2e" stroke-width="6"/>
+  <!-- organic eye -->
+  <ellipse cx="718" cy="440" rx="24" ry="19" fill="#ffffff"/>
+  <circle cx="724" cy="442" r="10" fill="#14122a"/>
+  <circle cx="728" cy="438" r="3.5" fill="#ffffff"/>
+  <!-- cyborg eye -->
+  <circle cx="815" cy="440" r="36" fill="url(#glow)" opacity="0.0"/>
+  <circle cx="815" cy="440" r="25" fill="url(#metal)" stroke="#3d4656" stroke-width="4"/>
+  <circle cx="815" cy="440" r="16" fill="url(#redlens)"/>
+  <circle cx="809" cy="434" r="4" fill="#ffffff" opacity="0.9"/>
+
+  <!-- handlebar mustache -->
+  <path d="M765,505
+           C735,490 700,500 690,525 C680,548 655,552 640,535 C650,560 690,575 720,555 C740,543 755,530 765,528
+           C775,530 790,543 810,555 C840,575 880,560 890,535 C875,552 850,548 840,525 C830,500 795,490 765,505 Z"
+        fill="#5a3214" stroke="#2e1708" stroke-width="5" stroke-linejoin="round"/>
+  <!-- confident grin -->
+  <path d="M738,572 Q765,592 795,572" stroke="#1f6b36" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>
