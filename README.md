@@ -55,7 +55,7 @@ After Claude writes or edits a `.gd` file, the plugin parses it with your local 
 
 ### MCP server
 
-The plugin starts **godot-mcp** for the Godot project it finds in your working folder (99 tools: scenes, scripts, shaders, animation, input, audio, navigation, UI, procedural generation, live editor control and runtime automation). You install godot-mcp once:
+**This plugin does not include the godot-mcp server.** It ships only a launcher (`scripts/start-godot-mcp.sh`) that starts your own install of the separate [alexmeckes/godot-mcp](https://github.com/alexmeckes/godot-mcp) project (99 tools: scenes, scripts, shaders, animation, input, audio, navigation, UI, procedural generation, live editor control and runtime automation) for the Godot project in your working folder. Until you install it, the server shows as failed and the skills work from files only. Install it once, then restart Claude:
 
 ```bash
 git clone https://github.com/alexmeckes/godot-mcp ~/godot-mcp
