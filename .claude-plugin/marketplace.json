@@ -1,0 +1,19 @@
+{
+  "name": "noit-godot-skills",
+  "description": "Claude Code skills for Godot 4.x game development",
+  "owner": {
+    "name": "noit2.com"
+  },
+  "plugins": [
+    {
+      "name": "noit-godot-skills",
+      "source": "./",
+      "description": "Godot 4.x (4.0–4.7) skill pack for Claude: GDScript, scenes, shaders, physics, UI, animation, input, audio, navigation, multiplayer, C#, testing, export/CI, performance and version migration, with godot-mcp auto-setup, a GDScript parse-check hook and a code-review agent.",
+      "version": "2.0.0",
+      "author": {
+        "name": "noit2.com"
+      },
+      "license": "GPL-3.0-or-later"
+    }
+  ]
+}

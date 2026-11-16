@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "godot-mcp": {
+      "command": "${CLAUDE_PLUGIN_ROOT}/scripts/start-godot-mcp.sh",
+      "args": []
+    }
+  }
+}

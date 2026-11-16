@@ -1,0 +1,17 @@
+{
+  "description": "After Claude writes or edits a GDScript file, parse it with the local Godot 4 binary (if installed) and report errors back so they get fixed immediately.",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/check-gdscript.mjs\"",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}
